@@ -1,3 +1,6 @@
+// NAME : RIYA BHART
+// ID : 23K-0063
+
 #include <iostream>
 using namespace std;
 struct Register
