@@ -1,6 +1,10 @@
 /*You are asked to write a C++ program that calculates the Least Common Multiple (LCM)
 and Greatest Common Divisor (GCD) of two numbers. Implement two separate recursive
 functions, calculateLCM and calculateGCD, each handling the corresponding task.*/
+// NAME : RIYA BHART
+// ID : 23K-0063
+
+
 #include <iostream>
 using namespace std;
 int CalculateGCD(int a, int b)
