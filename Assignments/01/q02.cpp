@@ -1,20 +1,23 @@
 #include <iostream>
 using namespace std;
 
-class Table {
+class Table
+{
 private:
     int TotalSeats;
     int OccupiedSeats;
     bool Clean;
 
 public:
-    Table() {
+    Table()
+    {
         TotalSeats = 4;
         OccupiedSeats = 0;
         Clean = true;
     }
 
-    Table(int capacity) {
+    Table(int capacity)
+    {
         if (capacity < 4)
             TotalSeats = 4;
         else
@@ -24,28 +27,35 @@ public:
         Clean = true;
     }
 
-    int getCapacity() const {
+    int getCapacity() const
+    {
         return TotalSeats;
     }
 
-    int getSeatsOccupied() const {
+    int getSeatsOccupied() const
+    {
         return OccupiedSeats;
     }
 
-    bool isClean() const {
+    bool isClean() const
+    {
         return Clean;
     }
 
-    int getFreeSeats() const {
+    int getFreeSeats() const
+    {
         return TotalSeats - OccupiedSeats;
     }
 
-    bool canBeUsed(int group) const {
+    bool canBeUsed(int group) const
+    {
         return (Clean && group <= TotalSeats);
     }
 
-    void occupySeats(int group) {
-        if (!canBeUsed(group)) {
+    void occupySeats(int group)
+    {
+        if (!canBeUsed(group))
+        {
             cout << "The table cannot be used by this group." << endl;
             return;
         }
@@ -55,38 +65,47 @@ public:
         cout << "Group of " << group << " friends seated at the table." << endl;
     }
 
-    void haveLunch() {
-        if (OccupiedSeats > 0) {
+    void haveLunch()
+    {
+        if (OccupiedSeats > 0)
+        {
             Clean = false;
             cout << "Lunch started. Table is no longer clean." << endl;
-        } else {
+        }
+        else
+        {
             cout << "No one is seated at the table. Cannot have lunch." << endl;
         }
     }
 
-    void leaveTable() {
+    void leaveTable()
+    {
         OccupiedSeats = 0;
         cout << "Everyone has left the table." << endl;
     }
 
-    void cleanTable() {
-        if (OccupiedSeats == 0) {
+    void cleanTable()
+    {
+        if (OccupiedSeats == 0)
+        {
             Clean = true;
             cout << "Table has been cleaned." << endl;
-        } else {
+        }
+        else
+        {
             cout << "Table cannot be cleaned as someone is still seated." << endl;
         }
     }
 };
 
-int main() {
+int main()
+{
     Table tables[5] = {
         Table(),
         Table(8),
         Table(8),
         Table(),
-        Table()
-    };
+        Table()};
 
     tables[0].occupySeats(4);
     tables[0].haveLunch();
