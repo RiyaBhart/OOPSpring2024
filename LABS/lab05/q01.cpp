@@ -51,6 +51,9 @@ float Square::allareas = 0;
 
 int main()
 {
+    cout << "Programmer : Riya Bhart\n ID : 23K-0063\n"
+         << endl;
+    
     Square s1(2.5);
     Square s2(2.03);
     Square s3(3.1);
