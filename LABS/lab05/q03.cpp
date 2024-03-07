@@ -23,6 +23,9 @@ public:
 };
 
 int main() {
+
+    cout << "Programmer : Riya Bhart\n ID : 23K-0063\n"
+         << endl;
     
     ValidateString str1("HelloWorld");
     ValidateString str2("11234Name");
