@@ -156,7 +156,7 @@ int main()
     restaurant.displayMenu();
 
     const MenuItem orderedItems[] = {item1, item2};
-    Payment payment(880);
+    Payment payment(2000+500);
     restaurant.placeOrder(orderedItems, 2, payment);
 
     return 0;
