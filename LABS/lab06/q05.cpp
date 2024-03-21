@@ -88,4 +88,4 @@ int main() {
 
     return 0;
 }
-q5 lab 6
+
