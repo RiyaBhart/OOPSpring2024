@@ -30,7 +30,6 @@ class Character: public Position, public Health{
         cout<<"Health : "<<health<<endl;
         // cout<<"Name : "<<name<<endl;
     }
-
 };
 int main(){
     Character c("ABC",2,3,4,10);
